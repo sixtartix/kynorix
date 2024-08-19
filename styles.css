@@ -131,7 +131,7 @@ h2 {
 }
 
 .donation-image img {
-    max-width: 400px;
+    max-width: 300px; /* Réduit la largeur maximale de l'image */
     height: auto;
 }
 
