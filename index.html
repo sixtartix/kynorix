@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kynorix - L'Aventure Gaming Commence Ici !</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+               @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #9146FF;
+            --secondary-color: #41E2BA;
+            --background-color: #0E0E10;
+            --text-color: #EFEFF1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+
+        .btn:hover {
+            background-color: #2fcfa9;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+
+        .about-content, .donation-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text, .donation-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .about-image, .donation-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img, .donation-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-content, .donation-content {
+                flex-direction: column;
+            }
+
+            .about-text, .donation-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">L'Univers Kynorix</a></li>
+                <li><a href="#donations">Propulsez l'Aventure</a></li>
+                <li><a href="#social">Rejoignez la Communauté</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue dans l'Univers Électrisant de Kynorix !</h1>
+                <p>Préparez-vous pour des streams palpitants, des fous rires contagieux, et des moments inoubliables !</p>
+                <a href="#" class="btn">Plongez dans l'Action !</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Découvrez l'Univers Kynorix</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Salut les aventuriers du pixel ! Moi c'est Kynorix, 20 ans, et mon monde, c'est un cocktail explosif de gaming intense, de mélodies entraînantes et d'horizons à explorer. Imaginez un endroit où chaque stream est une nouvelle épopée, où les rires fusent aussi vite que les combos, et où la bonne humeur est notre arme secrète !</p>
+                        <p>Pourquoi embarquer dans cette folle aventure ? Parce qu'ici, chaque partie est une histoire à écrire ensemble, chaque discussion une porte vers l'inconnu, et chaque moment partagé, une pépite de pur divertissement. Que vous soyez un pro du gaming ou un curieux en quête de fun, votre place est ici, dans une communauté où la passion et le délire font loi !</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/api/placeholder/400/400" alt="Kynorix en pleine action !">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donations">
+            <div class="container">
+                <h2>Propulsez l'Aventure vers de Nouveaux Sommets !</h2>
+                <div class="donation-content">
+                    <div class="donation-image">
+                        <img src="/api/placeholder/400/400" alt="La fusée Kynorix prête au décollage">
+                    </div>
+                    <div class="donation-text">
+                        <p>Votre soutien, c'est le carburant de notre fusée vers les étoiles du streaming :</p>
+                        <ul>
+                            <li>Une webcam HD pour capturer chaque émotion en 4K !</li>
+                            <li>Un studio dédié, véritable vaisseau spatial du gaming</li>
+                            <li>Un équipement de pointe pour des streams aussi fluides qu'épiques</li>
+                        </ul>
+                        <p>Chaque don, du plus petit au plus grand, est une étoile de plus dans notre constellation. Ensemble, illuminons le ciel du streaming !</p>
+                        <a href="#" class="btn">Boostez la Fusée Kynorix !</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social">
+            <div class="container">
+                <h2>Rejoignez la Communauté des Étoiles !</h2>
+                <p>Ne manquez rien de l'aventure ! Suivez-moi sur tous les fronts pour des contenus exclusifs, des défis déjantés et bien plus encore :</p>
+                <div class="social-links">
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kynorix. Tous droits réservés. Préparez-vous pour le décollage !</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add a class to header when scrolling for a solid background
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
