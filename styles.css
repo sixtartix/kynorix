@@ -116,7 +116,7 @@ h2 {
 
 .about-text, .donation-text {
     flex: 1;
-    padding-right: 40px;
+    padding-right: 60px; /* Augmente l'espace à droite du texte */
 }
 
 .about-image, .donation-image {
@@ -131,7 +131,7 @@ h2 {
 }
 
 .donation-image img {
-    max-width: 300px; /* Réduit la largeur maximale de l'image */
+    max-width: 400px;
     height: auto;
 }
 
@@ -148,7 +148,7 @@ h2 {
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+social-links a:hover {
     color: var(--secondary-color);
 }
 
@@ -181,6 +181,6 @@ footer {
     }
 
     .donation-image img {
-        max-width: 100%;
+        max-width: 90%;
     }
 }
