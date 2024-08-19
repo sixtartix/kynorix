@@ -111,7 +111,7 @@ h2 {
 .about-content, .donation-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-right: 60px;
 }
 
 .about-text, .donation-text {
